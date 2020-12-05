@@ -18,10 +18,8 @@
     "nanomorph": "~5.4.1"
   },
   "devDependencies": {
-    "chai": "4.2.0",
-    "cypress": "^5.1.0",
-    "mocha": "5.2.0",
-    "nodemon": "2.0.2",
+    "cypress": "6.0.1",
+    "nodemon": "~2.0.6",
     "parcel-bundler": "1.12.4"
   },
   "author": "Shane Thacker <shane@steadymade.com>",
