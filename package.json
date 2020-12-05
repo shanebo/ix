@@ -1,0 +1,34 @@
+{
+  "name": "ix",
+  "version": "0.0.1",
+  "description": "A tiny reactive component library.",
+  "repository": "git://github.com/shanebo/ix.git",
+  "main": "./index",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "build": "npm run clean; parcel build cypress/app/parcel.html --no-minify --no-source-maps --out-dir cypress/app/dist --public-url /dist; mv cypress/app/dist/ix.*.js cypress/app/dist/ix.js",
+    "start": "npm run build",
+    "dev": "nodemon --ignore cypress/app/dist --ignore cypress/integration -e js,html --exec \"npm start\"",
+    "test": "npm run build; npm run cypress:run; kill $!",
+    "test:dev": "npm run dev & npm run cypress:open",
+    "clean": "rm -r cypress/app/dist/*"
+  },
+  "dependencies": {
+    "nanomorph": "~5.4.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "cypress": "^5.1.0",
+    "mocha": "5.2.0",
+    "nodemon": "2.0.2",
+    "parcel-bundler": "1.12.4"
+  },
+  "author": "Shane Thacker <shane@steadymade.com>",
+  "license": "MIT",
+  "keywords": [
+    "reactive",
+    "component",
+    "dom"
+  ]
+}
