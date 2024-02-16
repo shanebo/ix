@@ -18,9 +18,6 @@
     "nanomorph": "~5.4.1"
   },
   "devDependencies": {
-    "cypress": "6.0.1",
-    "nodemon": "~2.0.6",
-    "parcel-bundler": "1.12.4"
   },
   "author": "Shane Thacker <shane@steadymade.com>",
   "license": "MIT",
